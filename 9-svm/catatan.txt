@@ -1,0 +1,30 @@
+SVM (Support Vector Machine)
+
+ketika kita ingin membuat batas antar group, maka akan muncul banyak cara,
+sehingga menemukan batas yang cocok adalah hal yang sangat penting, jika salah
+bisa jadi classificationnya melenceng.
+
+margin: jarak antar batas/boundary dengan data point pada tiap group
+semakin besar nilai margin semakin bagus hasilnya
+gambar: ada di folder img
+
+support Vectors: data point yang dekat dengan boundary, yang menjadi tolak ukur suatu nilai margin
+gambar: ada di folder img
+
+support vector machine draws a hyper plane in n dimensional space such that it maximizes margin between classification groups
+support vector machine menggambar bidang hiper dalam ruang berdimensi n sedemikian rupa sehingga memaksimalkan margin antar kelompok klasifikasi
+
+Gamma:
+High Gamma
+Low Gamma: ada sedikit masalah dengan akurasi, tapi masih oke
+gambar: di folder img
+
+Regularization: membuat boundary dengan sangat hati-hati(artinya sebisa mungkin)
+High Regularization(C)
+Low Regularization(C): mungkin akan ada error
+gambar: di folder img
+
+kernel: transformasi dataset yang kompleks sehingga bisa membuat boundarynya
+gambar dataset kompleks: di folder img
+gambar proses kernel: di folder img
+gambar setelah proses: di folder img

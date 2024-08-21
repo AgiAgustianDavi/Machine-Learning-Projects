@@ -1,0 +1,95 @@
+KMeans
+
+KMeans berguna untuk mengidentifikasi cluster pada suatu dataset
+
+KMeans memiliki parameter yak ni K centroids 
+atau bisa dibilang titik tengah nya suatu cluster, 
+sehingga jika suatu data dekat dengan K centorid itu, 
+maka dia bagian cluster itu
+
+Cara kerja KMeans ini begini gess:
+gambar sebelum proses: ada di folder img(before)\
+
+1. kita mulai dengan mengindetifikasi K sentroidnya terlebih dahulu
+
+2. kita set dengan nilai yang random saja, misal kita buat k nya dua biji
+gambar: ada di folder img(set centroids)
+
+3. Setelah k centorids nya ditentukan, hitung setiap jarak antar poin-poin dataset dengan centoridnya
+yang dekat akan menjadi bagian centroid itu
+gambar: ada di folder img(pembagian pertama)
+
+4. Nah kan udah kepisah tuh jadi 2 cluster(karena k centoridnya di set 2, jadinya ada 2 cluster, gituuu),
+poin yang mana masuk centorid mana udah keliatan.
+sekarang, kita lebih perbaiki lagi agar lebih jelas
+kita letakin 2 k centorid tadi ke tengah-tengah dari cluster yang udah tercpita tadi
+jadi nanti centorid itu bakal berada di tengah-tengah masing-masing cluster
+intinya jdi titik pusat cluster itu lohh!
+Oh iya, cluster tuh samadengan group yahh! Biar makin paham jgn lupa liat gambarnya
+gambar: ada di folder img(centroid ke tengah)
+
+5. kalau centoridnya udah ditengah, selanjutnya ulang lagi tahapnya deh 
+hitung ulang jarak antara poin dengan centroidnya, ntr yang paling dekat jadi bagian cluster tersebut
+gitu masehhh
+gambar: ada di folder img(pembagian kedua)
+
+6. Terus ulang-ulang aja deh langkah diatas biar dapet yang paling cocok
+gambar: ada di folder img(pembagian ketiga)
+
+7. pengulangannya sampe kapan?
+tentu saja sampe tak ada lagi poin-poin yang pindah cluster
+kalau tak ada lagi yang pindah cluster artinya itu dah paling cocok
+gituuu masehhh!
+
+8. selesai dehh
+gambar final : ada di folder img(final)
+
+
+udah paham kan? sekarang ada yang mengganjal nihh
+Terus gimana cara nge set K centoridnya? berapa banyak? bebas kah? atau gmna?
+
+mari kita selsaikan masalah ini!
+kita gunakan elbow method
+
+cara kerjanya gini:
+1. kita gunakan SSE, tau kan SSE?
+SSE itu yang ada di statistika itu lohh wkwk
+kepanjangan dari Sum of Squared Errors(apa ini COKKK!)
+jadi intinya SSE ini bakal jumlahin tiap jarak dari tiap poin ke centoridnya
+yahh nigtung keseluruhan jarak semua poin dari centoridnya gitulah intinya.
+terus nanti di jumlahin dengan keseluruhan SSE cluster lain
+rumusnya???
+liat di gambar aja lah yaa wkwk
+gambar : ada di folder img(SSE)
+paham kan? okeh lanjutt
+
+2. Buat grafik dehhh untuk tiap centorid
+misal:
+pertama kita set centorid=1: didapet SSE nya
+kedua set centorid=2: didapet SSE gabunganya
+ketiga set centorid=3: didapet SSE gabunganya
+keempat set centorid=4: didapet SSE gabunganya
+dan seterusnya, sampe 10 centroid cukup kok wkwk
+
+3. Nah nanti hasil grafiknya bakal nurun-nurun sampe ketitik 0
+why? kok nurun?
+iyalah, kan semakin banyak centorid, artinya semakin banyak cluster, 
+artinya lagi jarak tiap poin ke cluster bakal ngurang-ngurang dong, 
+ya kan? iya atau iyaa?
+
+Makanyaaa bakal makin turun, gituu masehhh
+gambar : ada di folder img(K vs SSE)
+
+4. Terus nanti grafiknya bakal keliatan kaya siku manusia gitu
+makanya namanya elbow method
+
+5. terakhir, tinggal cari titk yang buatnya kek siku gitu,
+nah dititik itulah kita bisa liat seberapa banyak centorid yang diperlukan
+gitu masehhh
+liat gambar deh biar paham
+gambar: di folder img(siku)
+
+
+ 
+
+

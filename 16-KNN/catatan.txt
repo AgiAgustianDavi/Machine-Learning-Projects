@@ -1,0 +1,16 @@
+KNN (K-Nearest Neighboors)
+
+intinya KNN ini lu mau cari tau lu itu di kelompok yang mana dengan cara
+liat diri lu bediri paling dekat dengan orang di kelompok mana,
+misal lu bediri deket 3 orang kelompok A, otomatis lu masuk kelompok A juga
+
+nah 3 orang ini bisa diatur, namanya K, k ini kita tentuin dengan try and error
+namun ada syarat:
+K tidak boleh terlalu kecil dan juga tidak boleh terlalu besar
+kenapa?
+karena kalo terlalu kecil, kita nganggap kita bediri ga dkt sama siapa-siapa, 
+kalo terlalu besar, kita nganggap diri kita bediri dekat dengan bnyk orang, yg bisa jadi dari berbagai kelompok,
+sehingga kita ga tau kita itu masuk kelompok mana.
+gambar: ada di folder img(konsep)
+
+K == n_neighbors

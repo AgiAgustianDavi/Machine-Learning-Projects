@@ -1,0 +1,48 @@
+Naive Bayes
+
+Probablitas Dasar
+Probablitas == kemungkinan lah yah
+
+contohnya:
+Nebak koin yang dilempar, 500 atau garuda hehe
+Probablitas adalah 1 banding 2 (1:2)
+kenapa gitu?
+1 itu untuk kemungkinan yang muncul(antar 500 atau garuda) tuh kan cuma satu yang muncul, ya kali dua" nya muncul wkwk
+2 itu untuk banyak kemungkinanny, kan ada 2 tuh, kalau bukan 500 ya garuda
+gambar: di folder img(koin)
+
+contoh lainnya, pas main kartu
+misal kau ambil kartu bebas, Probablitas kemungkinan dapet queen brp?
+kan dalam 1 set kartu ada 4 queen tuh
+jadi 4 banding 1 set kartu(lupa gua berapa jumlah keseluruhan kartu, dah lama ga main wkwk)
+nah dah inget, 1 set ada 52 kartu
+jadi Probablitasnya 4:52 == 1:13 (disederhanain)
+gambar: di floder img(kartu & kartu diamond)
+
+conditional probability ==> kondisi suatu Probablitas
+p(A/B)
+gambar: di folder img(conditional probability)
+
+rumus lengkapnya:
+P(A/B) = P(B/A) * P(A) / P(B) 
+by Thomas Bayes
+gambar: ada di folder img(rumus Probablitas)
+
+biar lebih paham dengan rumusnya liat gambarnya(WAJIB):
+gambar: di folder img(penjelasan rumus diamond queen)
+
+
+LALU apa itu Naive Bayes:
+Naive bayes adalah membuat asumsi/Probablitas 'Naive' berdasarkan feature seperti gender, class, umur, dll
+yang bersifat independen dengan yang lain
+
+biar lebih paham liat gambarnya
+gambar: di folder img(titanic crash)
+
+Naive bayes banyak digunakan untuk:
+1. email spam detection
+2. digit character recgonition
+3. weather prediction
+4. face detection
+5. news articel categoritation
+

@@ -1,0 +1,5 @@
+kolom yang digunakan:
+target/dependen : survived
+independen : Pclass, sex, age, fare
+
+yang lain abaikan

@@ -1,0 +1,19 @@
+Logistic Regression : menggunakan sigmoid function
+sedangkan
+Linear Regression(yang kita pelajari di bab sebelumnya): menggunakan linear function
+
+linear function: y = m * x + b
+bentuk grafik: garis lurus
+
+sigmodi function: s(x) = 1 / 1 + e^-x
+nilai e = Euler's number: 2.71828
+bentuk grafik: garis berbentuk s 
+
+sehingga itulah mengapa Logistic Regression paling cocok untuk
+memprediksi sesuatu yang bersifat kategori
+seperti: ya<=>tidak, positif<=>negatif dll.
+
+untuk lebih jelasnya nanti cari saja videonya lagi
+Youtube: Codebasics
+Judul: Machine Learning Tutorial Python-8: Logistic Regression(binary classification)
+

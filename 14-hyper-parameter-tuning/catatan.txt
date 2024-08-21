@@ -1,0 +1,7 @@
+Hyper Parameter Tuning
+
+adalah proses memilih parameter yang cocok untuk model yang kamu buat.
+Kan tiap model itu ada parameter-parameter tertentu yang bisa diset sesuai kebutuhan
+nah Hyper Parameter Tuning ini adalah caranya milih itu.
+gambar: di folder img (konsep hyper Tuning)
+

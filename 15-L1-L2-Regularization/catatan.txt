@@ -1,0 +1,49 @@
+L1 & L2 regularization
+
+Kan model kita itu kita training dulu menggunakan dataset, 
+biar dia memahaminya.
+proses training ini disebut juga proses fitting (kalau kita mau train kan pakek .fit)
+contoh : model.fit(X,y)
+Nah tapi ada masalah dalam proses fitting ini
+bagimana caranya mengfitting yang benar agar sesuai?
+lihat gambar, yang paling kanan yang paling bagus:
+gambar: di folder img(contoh fitting model)
+
+ada tiga jenis fitting:
+1. underfit
+2. overfit
+3. balanced fit
+kalau digambar: kiri(underfit), tengah(overfit), kanan(balanced fit)
+
+ada juga gambar proses overfit ==> balanced fit:
+gambar: di folder img(overfit ke balanced fit)
+
+
+masih ingat dengan mse? 
+nah mse ini konsep dasar untuk fitting, kek nyari jarak terdekat dengan poin lah intinya
+rumus:
+gambar: mse
+
+nah di mse ada tuh yi - yprediksi
+
+yprediksi ini juga == h0(xi)
+h0(xi) ini apa?
+h0(xi) ini tidak lain dan tidak bukan adalah konsep polinomial pada X
+gambar: h0(xi)
+
+JADI, kita ingin meminimalkan nilai dari mse ini, makanya ada L2 regularization
+gunanya biar mse ini kalau nilainya tinggi, tidak bakal di fitting
+intinya L2 ini si tukang ngecek nilai mse nya, udah gitu aja dahh wkwk
+gambar: l2 regularization
+
+bedanya sama L1 itu cuma rumusnya doang
+kalo L2 pakek pangkat dua, kalo L1 pakek absolut value (yah keduanya biar tidak negatif aja, ada yang dipangkatin, ada yang dipositifin)
+liat gambarnya:
+gambar : L1 regularization
+
+
+Nah sudah liat ini semua, kembali lagi ke gambar overfit ke balanced fit
+liat bagian try to make 03 dan 04 sekecil mungkin, kalo bisa 0
+biar apa? yak biar bisa balanced fit
+nah pakek L1 L2 regularization buat ngecek apakah mse nya besar apa kecil
+kalo kecil bisa balanced, kalo gede, yah ga bisa lah!

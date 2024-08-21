@@ -1,0 +1,46 @@
+K-Fold Cross Validation
+
+ini adalah salah satu teknik untuk melakukan train dan test machine learning
+yang mana lebih baik daripada teknik-teknik seperti:
+1. Melakukan Train dan Test dengan dataset yang sama
+Gambar: ada di folder img(cara 1)
+2. Melakukan train dan Test dengan dataset yang berbeda (biasanya suatu dataset dibagi porsi Train:Test <=> 80:20)
+Gambar: ada di folder img(cara 2)
+Kita sebut k-fold ajalah ya biar tidak ribet wkwk
+
+cara kerja si k-fold ini begini:
+1. misal lu punya 100 samples
+2. lu masukin mereka ke masing-masing fold(misal lu buat 5 fold/kotaklah ya nyebutnya wkwk)
+3. Nah pas sdh kebagi rata, lu sisain aja deh 1 fold buat test, yang lain buat train
+4. fold 1 jadi test, fold 2-5 jadi trainnya, didapat score
+5. Lanjut fold 2 jadi test, fold 1,3-5 jadi train, dapet juga scorenya
+6. lakuin sampe fold terakhir jadi test, dan didapet scorenya
+7. nah tiap tahap dari 4 - 6 itu kan didapet scorenya, terus tiap score itu lu rata-ratain deh
+8. didapet lah hasil yang optimal jengjengjeng
+
+gitu cara kerjanya ygy
+biar lebih paham tengok gambarnya: di floder img(konsep k-fold)
+
+
+Jadi k-fold ini bisa menjadi senjata andalan buat ngelatih ML mu (biar menang war wakk!!)
+
+
+sebenarnya pakai cara 2 udah bagus, yang train_split_test itu udah bagus
+cuma minusnya ketika kita nge re-run train_split_test maka datanya bakal ganti,
+artinya scorenya sudah pasti ganti juga ketika re-run modelnya
+
+
+TAPI!!!!!
+
+ada yang lebih baik juga dari Kfold, yakni:
+StratifiedkFold (sebenarnya ini kfold juga sih wkwkwk)
+
+kenapa StratifiedkFold???? why?? why?? and why?
+'cuz Kfold tidak bisa menangani jika misal kita set fold nya ada 3, dan datasetnya terdapat 3 kategori
+nnti ada bagian yang data trainnya 2 kategori, terus data test nya kategori yang lain
+terus apa yang terjadi???
+yahh tentu saja ML nya ga paham anjirr, lu kasih materi yang situ, terus lu kasih test yang sana, kaga paham lah dia!!
+mirip kek mhs dikasih materi bab 1, terus dosennya bilang ini ada test kerjain, testnya tentang materi bab 2. ADEKAH OTAKK AWAK NI APE TAK? wkwk
+
+MAKANYA, pakai StratifiedkFold, karena beliau ini bisa handle yang begituan
+ibaratnya beliau ini versi yang lebih baik dprd doi yang lama hohoho

@@ -1,0 +1,40 @@
+RandomForest
+
+Decision Tree: Pohon keputusan
+
+RandomForest: multiple Decision tree
+maksudnya misal kita punya dataset, terus kita bagi dataset tersebut secara acak,
+kemudian kita buat decision tree untuk setiap group-group dataset tadi
+itulah maksud dari RandomForest
+gambar: di folder img
+gambar hasil: di folder img
+
+cara kerjanya gini wir:
+
+misal lu pen beli lambor, tapi lu minta pendapat fren-fren lu dlu
+jadi lu telpon mrka satu-satu, alhasil didapat:
+fren 1: belilah
+fren 2: mending beli mobil indo saje, dapat lebih dari 2
+fren 3: mending ferrari drpd lambor
+fren 4: gass
+fren 5: hmm, tesla lebih ramah lingkungan
+fren 6: mending duetny untuk beli rumah
+
+didapat kesimpulan
+fren 1: setuju
+fren 2: menolak
+fren 3: menolak
+fren 4: setuju
+fren 5: menolak
+fren 6: menolak
+
+2/4 => menolak
+
+jadi kemungkinan besar kamu pilih adalah TIDAK JADI BELI!
+
+nah, kira-kira begitu konsep RandomForest ini wirrr
+gambar: di floder img, nama: beli lambor
+
+di RandomForest ada parameter penting:
+n_estimators: berapa banyak group tree yang bakal kamu suruh model untuk buat
+defaultnya 100 yah!
