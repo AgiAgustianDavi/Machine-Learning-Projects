@@ -1,9 +1,8 @@
 # Machine-Learning-Projects
-This is Repo for my mini projects about Machine Learning (ML)
+This repository contains my mini projects related to Machine Learning (ML).
 
-- main.ipynb is my learning notebook
-- catatan.txt is nothing, just my note to remember what I learned
-- folder img is my screenshoots to support my note
+- `main.ipynb` is my learning notebook.
+- `catatan.txt` is just a personal note to help me remember what I've learned.
+- The `img` folder contains screenshots that support my notes.
 
-all of this i got from a very great mentor,
-thanks to the youtube channel codebasics (https://youtu.be/gmvvaobm7eQ?list=PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw) for all the lessons.
+I learned all of this from a fantastic mentor. A special thanks to the YouTube channel Codebasics (https://youtu.be/gmvvaobm7eQ?list=PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw) for all the lessons.
