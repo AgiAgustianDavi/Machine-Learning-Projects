@@ -1,0 +1,49 @@
+PCA ( Principal Component Analysis )
+PCA ini untuk memilih features yang penting,
+atau dalam kata lain milih x yang paling berpengaruh dengan y
+kalau yang tidak berpengaruh bakal dibuang/tidak digunakan
+
+manfaat PCA ini:
+- Mempercepat proses training model
+- Memudahkan visualisasi data
+
+contoh: 
+misal lu punya dataset yang punya 100 kolom.
+Jika lu pakek semua 100 kolom itu, maka yahh bakal lama lah prosesnya
+kek lu ngitung 210 x 234, pasti butuh waktu memprosesnya biar dapet hasilnya
+iya toh? kecuali kalau lu beneran punya spek otak yang super wkwk
+
+nah gimana kalau kita cuma pakek 2 kolom yang berkaitan dengan target 
+(yang paling penting dan berhubungan dengan apa yang kita mau cari)
+mirip lu ngitung 1 + 1, pasti diluar kepala, dalam sepersekian detik langsung teriak angka 2
+
+kira-kira gitu broh gunanya PCA ini, penting gak???
+pentinglah, biar lu nya ga kerja lembur muluuuuuu wkwk
+
+
+nih pengertian bahasa enggres nya:
+"PCA is a process of figuring out MOST IMPORTANT features or Principal
+Components that has the MOST IMPACT on the target variable"
+
+gambar: ada di folder img(2d to 1d) => ini konsep penyederhanaannya
+maksud gambar: misal lu punya features corner pixel sama central pixel
+lu sederhanain aja, jadi tinggal central pixel, yang corner pixel kan tidak begitu penting, jadi hapus aja
+
+gambar lain: di folder img(Principal Component)
+
+cara kerja PCA :
+gambar: di folder img(cara kerja PCA)
+
+HAL-HAL YANG PERLU DIPERHATIKAN KETIKA MENGGUNAKAN PCA:
+- Scale features before applying PCA
+- akurasi mungkin akan berkurang (yah karena ada beberapa x yang dihapus)
+
+
+
+
+
+
+
+
+
+
